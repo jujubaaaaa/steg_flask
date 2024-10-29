@@ -1,3 +1,9 @@
+:root {
+    --bgnd-light: #a2d2ff;
+    --text-light: black; 
+    --border-light: #ff99c8;
+}
+
 /* Spinner de Loading */
 .spinner {
     display: none;
@@ -5,8 +11,8 @@
     height: 50px;
     border: 5px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    border-top-color: #3498db;
-    animation: spin 1s infinite Linear;
+    border-top-color: #3498DB;
+    animation: spin 1s infinite linear;
     margin: 20px auto;
 }
 
@@ -18,5 +24,84 @@
 
 .loading {
     display: none;
-    
+}
+
+body {
+    background-color: var(--bgnd-light);
+    justify-content: center;
+    font-size: 1rem;
+
+
+}
+
+h1 {
+    font-family: Satisfy;
+    font-size: 5rem;
+    color: var(--text-light--);
+    justify-content: center;
+    color: #ffafcc;
+}
+
+h2 {
+    color: var(--text-light)
+
+}
+
+.form-encode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
+}
+
+form.imput {
+    height: 28px;
+}
+
+.info {
+    font-family: Roboto Condense;
+    display: flex;
+    justify-content: center;
+    color: black;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.options {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.encode, .decode {
+    border: 2px solid var(--border-light);
+    border-radius: 12px;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-family: Roboto Condense;
+
+}
+
+.options-link {
+    color: #ff99c8;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+}
+
+.material-symbols-outlined {
+    font-size: 2rem;
 }
